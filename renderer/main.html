@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <title>Read it</title>
+
+  </head>
+  <body>
+    <header>
+      <button id="show-modal_">+</button>
+      <input type="text" id="search_" placeholder="Search"/>
+    </header>
+    <main>
+	<div id="modalWrapper_">
+		<div id="modal_">
+			<div style="width: 20px;"></div>
+			<p id="no-items_">No items</p>
+			<input id="url_" type="text" placeholder="Enter URL" value="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" />
+			
+			<button id="add-item_">Add item</button><br/>
+			<button id="close-modal_">Cancel</button><br/>
+		</div>
+	</div>
+      <div id="items_">
+		  <!-- <div class="read-item_">
+				<img src="https://placehold.it/500/500"/>
+				<h2>Title of item added</h2> -->
+		  </div>
+	  </div>
+    </main>
+    <script>
+      // You can also require other files to run in this process
+      require('./app')
+    </script>
+  </body>
+</html>

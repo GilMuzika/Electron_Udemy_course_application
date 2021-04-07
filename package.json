@@ -1,0 +1,45 @@
+{
+  "name": "master-electron",
+  "version": "1.0.0",
+  "description": "Master Electron Course Code",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "inspect": "nodemon --exec electron --inspect=9222 .",
+    "debug": "nodemon --exec electron --inspect-brk=9222 .",
+    "reset": "git reset --hard"
+  },
+  "repository": "https://github.com/GilMuzika/Electron_Udemy_course_application",
+  "keywords": [
+    "Electron",
+    "Master Electron",
+    "demo"
+  ],
+  "author": "GitHub, Stackacademytv",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "nodemon": "^2.0.0"
+  },
+  "dependencies": {
+    "devtools-detect": "^3.0.1",
+    "electron-window-state": "^5.0.3"
+  },
+  "build": {
+    "appId": "https://www.facebook.com/profile.php?id=100003098807953",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "zip"
+    }, 
+    "linux": {
+      "category": "utility",
+      "target": "zip"
+    }
+    
+
+  }
+}
